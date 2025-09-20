@@ -1,0 +1,150 @@
+name: 🔐 Repository Access Request
+description: Request access to modify protected files (OWNER APPROVAL REQUIRED)
+title: "[ACCESS REQUEST] "
+labels: ["access-request", "security", "permissions"]
+assignees:
+  - ravibh5522
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🛡️ Protected Repository Access Request
+        
+        **⚠️ IMPORTANT**: This is a **PROPRIETARY SOFTWARE REPOSITORY** with strict access controls. Only the repository owner (@ravibh5522) can authorize modifications to protected files.
+        
+        **🔒 PROTECTED FILES INCLUDE**: Documentation (README.md, LICENSE), Configuration files, GitHub settings, Database schemas, and all critical project files.
+        
+        ---
+
+  - type: input
+    id: github_username
+    attributes:
+      label: 📱 GitHub Username
+      description: Your GitHub username requesting access
+      placeholder: "@your-username"
+    validations:
+      required: true
+
+  - type: input
+    id: full_name
+    attributes:
+      label: 👤 Full Name
+      description: Your legal full name for verification
+      placeholder: "John Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: organization
+    attributes:
+      label: 🏢 Organization/Company
+      description: Organization you represent (if applicable)
+      placeholder: "Company Name or 'Individual'"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access_type
+    attributes:
+      label: 🔐 Access Type Requested
+      description: What type of access are you requesting?
+      options:
+        - Documentation modification (README, contributing guides)
+        - Configuration changes (package.json, build configs)
+        - GitHub settings modification (.github/ directory)
+        - Database schema changes (supabase/)
+        - Full repository access (all protected files)
+        - Source code collaboration only (src/ directory)
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_justification
+    attributes:
+      label: 📋 Business Justification
+      description: Provide detailed justification for access request
+      placeholder: |
+        Explain:
+        - Why you need access to protected files
+        - Your role in the project
+        - Specific changes you plan to make
+        - How this benefits the project
+        - Timeline for requested access
+    validations:
+      required: true
+
+  - type: textarea
+    id: background_verification
+    attributes:
+      label: 🔍 Background & Credentials
+      description: Provide background information for verification
+      placeholder: |
+        Include:
+        - Professional background/experience
+        - Previous contributions to open source
+        - References or portfolio links
+        - LinkedIn or professional profile
+        - Reason for interest in SmartTask IQ
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: legal_agreements
+    attributes:
+      label: ⚖️ Legal Agreements & Understanding
+      description: You must agree to all terms before access can be granted
+      options:
+        - label: I understand this is proprietary software owned by Ravi Kumar
+          required: true
+        - label: I agree to respect intellectual property rights and licensing terms
+          required: true
+        - label: I will not share, distribute, or misuse any proprietary information
+          required: true
+        - label: I understand that access can be revoked at any time without notice
+          required: true
+        - label: I agree to follow all contribution guidelines and code standards
+          required: true
+        - label: I understand that all modifications require owner approval
+          required: true
+
+  - type: checkboxes
+    id: technical_understanding
+    attributes:
+      label: 🔧 Technical Understanding
+      description: Confirm your technical understanding
+      options:
+        - label: I understand the CODEOWNERS file protection system
+          required: true
+        - label: I understand that protected files require special authorization
+          required: true
+        - label: I will create separate PRs for protected vs. source code changes
+          required: true
+        - label: I understand the automated protection workflows will block unauthorized changes
+          required: true
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: 📝 Additional Information
+      description: Any additional information to support your request
+      placeholder: |
+        Optional: Add any other relevant information that might help with your access request.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ## � Next Steps
+        
+        1. **Owner Review**: @ravibh5522 will review your request within 2-5 business days
+        2. **Verification**: Background and credentials may be verified
+        3. **Decision**: You will be notified of approval/denial with reasoning
+        4. **Access Setup**: If approved, appropriate repository permissions will be configured
+        
+        ## �️ Security Notice
+        
+        All access requests are logged and monitored. False or misleading information will result in permanent access denial. This repository contains proprietary intellectual property and trade secrets.
+        
+        **Contact**: For urgent requests or questions, contact @ravibh5522 directly.

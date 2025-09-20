@@ -1,0 +1,44 @@
+# Project Documentation & Legal Files - Owner Authorization Required
+README.md                    @ravibh5522
+LICENSE                      @ravibh5522
+CONTRIBUTING.md             @ravibh5522
+SECURITY.md                 @ravibh5522
+CODE_OF_CONDUCT.md          @ravibh5522
+CHANGELOG.md                @ravibh5522
+SUPPORT.md                  @ravibh5522
+
+# GitHub Configuration - Owner Only
+.github/                    @ravibh5522
+.github/workflows/          @ravibh5522
+.github/ISSUE_TEMPLATE/     @ravibh5522
+
+# Project Configuration Files - Owner Authorization Required
+package.json                @ravibh5522
+package-lock.json           @ravibh5522
+bun.lockb                   @ravibh5522
+tsconfig.json              @ravibh5522
+tsconfig.*.json            @ravibh5522
+vite.config.ts             @ravibh5522
+tailwind.config.ts         @ravibh5522
+postcss.config.js          @ravibh5522
+eslint.config.js           @ravibh5522
+components.json            @ravibh5522
+
+# Supabase Configuration - Owner Only
+supabase/config.toml       @ravibh5522
+supabase/migrations/       @ravibh5522
+supabase/functions/        @ravibh5522
+
+# Root Configuration Files - Owner Authorization Required
+index.html                 @ravibh5522
+.gitignore                 @ravibh5522
+.env*                      @ravibh5522
+
+# Source Code - Collaborative Development (with review)
+src/                       @ravibh5522
+public/                    @ravibh5522
+
+# Note: This CODEOWNERS file ensures that critical project files
+# can only be modified by the project owner (Ravi Kumar).
+# Collaborators can work on source code but need approval for
+# documentation, configuration, and licensing changes.

@@ -1,0 +1,13 @@
+project_id = "nlgviamuxtqboxuhmflv"
+
+[functions.ai-assistant-chat]
+verify_jwt = false
+
+[functions.ai-project-insights]
+verify_jwt = false
+
+[functions.ai-task-suggestions]
+verify_jwt = false
+
+[functions.ai-comprehensive-assistant]
+verify_jwt = false

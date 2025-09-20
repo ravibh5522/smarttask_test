@@ -1,0 +1,20 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📞 Contact Project Owner
+    url: https://github.com/ravibh5522
+    about: Contact Ravi Kumar for business inquiries, licensing, or collaboration opportunities
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/ravibh5522/smarttask-iq/security/advisories/new
+    about: Report security vulnerabilities privately to the project owner
+  - name: � Repository Access Request
+    url: https://github.com/ravibh5522/smarttask-iq/issues/new?template=access_request.yml
+    about: Request repository access or permission changes (requires owner approval)
+  - name: �💬 General Questions
+    url: https://github.com/ravibh5522/smarttask-iq/discussions
+    about: Ask questions and discuss SmartTask IQ features
+  - name: 📚 Documentation
+    url: https://github.com/ravibh5522/smarttask-iq/blob/main/README.md
+    about: View comprehensive project documentation and setup guides
+  - name: 🛡️ Branch Protection Rules
+    url: https://github.com/ravibh5522/smarttask-iq/blob/main/.github/BRANCH_PROTECTION.md
+    about: Learn about repository protection rules and file access controls

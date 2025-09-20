@@ -1,0 +1,186 @@
+name: Feature Request
+description: Suggest a new feature for SmartTask IQ
+title: "[FEATURE]: "
+labels: ["enhancement", "feature-request"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Your ideas help make SmartTask IQ better.
+        
+        **Note**: This is proprietary software owned by Ravi Kumar. Feature implementation is at the sole discretion of the project owner.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched existing issues and feature requests to avoid duplicates
+          required: true
+        - label: This feature would benefit the SmartTask IQ user base
+          required: true
+        - label: I understand this is a proprietary project and feature implementation is not guaranteed
+          required: true
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      description: Provide a clear and concise summary of the feature
+      placeholder: Brief description of the proposed feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: Describe the problem or limitation you're experiencing
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail
+      placeholder: How would you like this feature to work?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Provide specific use cases where this feature would be valuable
+      placeholder: |
+        1. As a [user type], I want to [action] so that [benefit]
+        2. When [scenario], I need to [action] to achieve [outcome]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: Which category does this feature belong to?
+      options:
+        - AI & Machine Learning
+        - Task Management
+        - Team Collaboration
+        - Time Tracking
+        - Analytics & Reporting
+        - User Interface
+        - Project Management
+        - Integrations
+        - Performance
+        - Security
+        - Mobile Experience
+        - Accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Critical (Essential for workflow)
+        - High (Would significantly improve experience)
+        - Medium (Nice to have improvement)
+        - Low (Minor enhancement)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: Target Users
+      description: Who would benefit most from this feature?
+      multiple: true
+      options:
+        - Individual Users
+        - Team Leaders
+        - Project Managers
+        - Developers
+        - Designers
+        - Administrators
+        - All Users
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: Describe any alternatives you've considered
+    validations:
+      required: false
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Examples
+      description: Include mockups, wireframes, or examples if available
+      placeholder: Attach or describe visual examples of how this feature might look
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: Any technical aspects or constraints to consider?
+      placeholder: Technical implementation thoughts, API considerations, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: implementation-complexity
+    attributes:
+      label: Estimated Implementation Complexity
+      description: How complex do you think this feature would be to implement?
+      options:
+        - label: Simple (Minor UI changes or configuration)
+        - label: Moderate (New component or feature module)
+        - label: Complex (Major system changes or new integrations)
+        - label: Very Complex (Fundamental architecture changes)
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples
+      placeholder: Any additional information that might be helpful
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: feature-impact
+    attributes:
+      label: Potential Impact Areas
+      description: Which areas of the application might this feature affect?
+      options:
+        - label: User Interface
+        - label: Database Schema
+        - label: API Endpoints
+        - label: Performance
+        - label: Security
+        - label: Mobile Experience
+        - label: Accessibility
+        - label: Third-party Integrations
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        **Note**: Feature requests are reviewed and prioritized by the project owner. Implementation timeline and feasibility will be determined based on project roadmap and technical constraints.
+        
+        **Contact**: For detailed discussions about this feature, you can reach out to [@ravibh5522](https://github.com/ravibh5522).

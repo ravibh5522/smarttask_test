@@ -1,0 +1,224 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
+SMARTTASK IQ - PROPRIETARY SOFTWARE LICENSE
+
+
+Copyright © 2025 Ravi Kumar, Gurav Kumar, Raghav Gulati. All Rights Reserved.
+
+===================================================================================
+
+IMPORTANT: READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THIS SOFTWARE.
+
+By accessing, downloading, installing, copying, or using this software, you agree 
+to be bound by the terms of this license agreement. If you do not agree to the 
+terms of this license, do not access, download, install, copy, or use the software.
+
+===================================================================================
+
+1. DEFINITIONS
+
+"Software" means SmartTask IQ application, including all source code, object code, 
+documentation, user interfaces, visual designs, algorithms, data structures, 
+databases, AI models, and any other materials provided in connection with this 
+software.
+
+"Owners" means Ravi Kumar (Project Owner & Lead Developer), Gurav Kumar (Stakeholder 
+& Full Stack Developer), and Raghav Gulati (Stakeholder & Full Stack Developer), 
+collectively the sole proprietors and copyright holders of the Software.
+
+"You" or "Licensee" means the individual or entity that has obtained access to 
+the Software.
+
+"Derivative Works" means any work that is based upon or derived from the Software.
+
+2. OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS
+
+2.1 EXCLUSIVE OWNERSHIP
+Ravi Kumar, Gurav Kumar, and Raghav Gulati are the sole and exclusive owners of 
+all right, title, and interest in and to the Software, including but not limited to:
+- All source code and object code
+- All algorithms, data structures, and methodologies
+- All user interface designs and visual elements
+- All AI models, machine learning algorithms, and training data
+- All documentation, specifications, and technical materials
+- All trademarks, trade names, and branding elements
+- All database schemas, data models, and data structures
+- All intellectual property rights worldwide
+
+2.2 PROTECTED INTELLECTUAL PROPERTY
+The Software contains valuable trade secrets, proprietary algorithms, and 
+confidential information that constitute the intellectual property of the Owners 
+(Ravi Kumar, Gurav Kumar, and Raghav Gulati). This includes, without limitation:
+- Proprietary AI algorithms and machine learning models
+- Task management methodologies and optimization techniques
+- User experience design patterns and interface innovations
+- Database optimization strategies and data structures
+- Real-time collaboration algorithms and synchronization methods
+- Performance optimization techniques and caching strategies
+
+3. GRANT OF LIMITED LICENSE
+
+Subject to the terms and conditions of this Agreement, the Owners grant you a 
+limited, non-exclusive, non-transferable, revocable license to:
+- View the source code for educational and evaluation purposes only
+- Run the Software in a development environment for demonstration purposes
+- Study the Software architecture and implementation for learning purposes
+
+4. RESTRICTIONS AND PROHIBITIONS
+
+You are expressly prohibited from:
+
+4.1 COMMERCIAL USE
+- Using the Software for any commercial purposes
+- Incorporating the Software into commercial products or services
+- Offering the Software as a service to third parties
+- Using the Software to compete with the Owners' business interests
+
+4.2 REPRODUCTION AND DISTRIBUTION
+- Copying, reproducing, or duplicating the Software or any portion thereof
+- Distributing, selling, leasing, or licensing the Software to third parties
+- Making the Software available through any public repository or platform
+- Sharing the Software with individuals or entities not authorized by this license
+
+4.3 MODIFICATION AND DERIVATIVE WORKS
+- Modifying, adapting, or creating derivative works based on the Software
+- Reverse engineering, decompiling, or disassembling the Software
+- Extracting, isolating, or separating any components of the Software
+- Creating competing products based on the Software's design or functionality
+
+4.4 INTELLECTUAL PROPERTY VIOLATIONS
+- Removing, altering, or obscuring any copyright notices or proprietary markings
+- Claiming ownership or authorship of any portion of the Software
+- Filing patents, trademarks, or other intellectual property applications based 
+  on the Software
+- Using the Software's intellectual property in any unauthorized manner
+
+5. CONFIDENTIALITY
+
+The Software contains confidential and proprietary information of the Owners. You 
+agree to:
+- Maintain the confidentiality of all proprietary information
+- Not disclose any confidential information to third parties
+- Use the same degree of care to protect confidential information as you use to 
+  protect your own confidential information, but not less than reasonable care
+- Return or destroy all confidential information upon termination of this license
+
+6. AI AND MACHINE LEARNING COMPONENTS
+
+The Software incorporates advanced AI algorithms, machine learning models, and 
+data processing techniques that are proprietary to the Owners. You acknowledge 
+that:
+- All AI models and training methodologies are trade secrets
+- Machine learning algorithms and optimization techniques are proprietary
+- Data processing pipelines and analytical methods are confidential
+- You shall not attempt to extract, reverse engineer, or replicate any AI 
+  components
+
+7. TERMINATION
+
+7.1 AUTOMATIC TERMINATION
+This license will terminate automatically if you breach any term of this Agreement.
+
+7.2 TERMINATION BY OWNERS
+The Owners may terminate this license at any time, with or without cause, by 
+providing written notice.
+
+7.3 EFFECT OF TERMINATION
+Upon termination:
+- All rights granted under this license immediately cease
+- You must immediately cease all use of the Software
+- You must destroy all copies of the Software in your possession
+- All confidentiality obligations survive termination
+
+8. LEGAL ENFORCEMENT
+
+8.1 JURISDICTION
+This Agreement shall be governed by and construed in accordance with the laws of 
+[Your Jurisdiction], without regard to conflict of law principles.
+
+8.2 REMEDIES
+You acknowledge that any breach of this Agreement would cause irreparable harm to 
+the Owners for which monetary damages would be inadequate. Therefore, the Owners 
+shall be entitled to seek injunctive relief and other equitable remedies without 
+the need to post bond.
+
+8.3 DAMAGES
+In addition to injunctive relief, you agree to pay all actual damages, including 
+but not limited to:
+- Lost profits and business opportunities
+- Attorney fees and legal costs
+- Costs of investigation and enforcement
+- Any other damages suffered by the Owners
+
+9. DISCLAIMERS
+
+9.1 NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+9.2 LIMITATION OF LIABILITY
+IN NO EVENT SHALL THE OWNERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, 
+CONSEQUENTIAL, OR PUNITIVE DAMAGES, REGARDLESS OF THE THEORY OF LIABILITY.
+
+10. COMPLIANCE AND REPORTING
+
+You agree to:
+- Comply with all applicable laws and regulations
+- Provide reasonable access for compliance audits if requested
+- Report any suspected unauthorized use or security breaches
+- Cooperate with any investigation of intellectual property violations
+
+11. EXPORT CONTROL
+
+You acknowledge that the Software may be subject to export control laws and 
+regulations. You agree to comply with all applicable export control laws and 
+shall not export or re-export the Software without proper authorization.
+
+12. ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between the parties and supersedes 
+all prior or contemporaneous agreements, representations, warranties, and 
+understandings with respect to the Software.
+
+13. SEVERABILITY
+
+If any provision of this Agreement is held to be unenforceable, the remainder of 
+the Agreement shall remain in full force and effect.
+
+14. AMENDMENTS
+
+This Agreement may only be amended by a written agreement signed by all Owners 
+(Ravi Kumar, Gurav Kumar, and Raghav Gulati).
+
+===================================================================================
+
+ACKNOWLEDGMENT
+
+By using the Software, you acknowledge that you have read, understood, and agree 
+to be bound by the terms and conditions of this License Agreement.
+
+For questions regarding this license or to request permissions beyond those 
+granted herein, please contact:
+
+Project Owners:
+- Ravi Kumar (Lead): [contact information]
+- Gurav Kumar: [contact information] 
+- Raghav Gulati: [contact information]
+
+GitHub: https://github.com/ravibh5522/smarttask-iq
+
+===================================================================================
+
+SmartTask IQ - Proprietary Software
+© 2025 Ravi Kumar, Gurav Kumar, Raghav Gulati. All Rights Reserved.
+
+This software is protected by copyright law and international treaties. 
+Unauthorized reproduction, distribution, or use is strictly prohibited and may 
+result in severe civil and criminal penalties.
+
+NOTICE TO DEVELOPERS: This software contains proprietary trade secrets and 
+confidential information. Any attempt to reverse engineer, decompile, or extract 
+proprietary algorithms may result in legal action.
+
+Last Updated: September 10, 2025

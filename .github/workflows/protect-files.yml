@@ -1,0 +1,192 @@
+name: 🛡️ Protect Critical Files
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'LICENSE'
+      - 'COPYRIGHT'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'CHANGELOG.md'
+      - 'SUPPORT.md'
+      - '.github/**'
+      - 'package.json'
+      - 'tsconfig*.json'
+      - 'vite.config.ts'
+      - 'tailwind.config.ts'
+      - 'eslint.config.js'
+      - 'postcss.config.js'
+      - 'components.json'
+      - '*.md'
+      - 'docs/**'
+      - '.gitignore'
+      - '.env*'
+      - 'supabase/config.toml'
+      - 'bun.lockb'
+      - 'yarn.lock'
+      - 'package-lock.json'
+  push:
+    paths:
+      - 'README.md'
+      - 'LICENSE'
+      - 'COPYRIGHT'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'CODE_OF_CONDUCT.md'
+      - 'CHANGELOG.md'
+      - 'SUPPORT.md'
+      - '.github/**'
+      - 'package.json'
+      - 'tsconfig*.json'
+      - 'vite.config.ts'
+      - 'tailwind.config.ts'
+      - 'eslint.config.js'
+      - 'postcss.config.js'
+      - 'components.json'
+      - '*.md'
+      - 'docs/**'
+      - '.gitignore'
+      - '.env*'
+      - 'supabase/config.toml'
+      - 'bun.lockb'
+      - 'yarn.lock'
+      - 'package-lock.json'
+
+jobs:
+  protect-critical-files:
+    runs-on: ubuntu-latest
+    name: 🚫 Block Critical File Changes
+    
+    steps:
+    - name: � STRICT ACCESS CONTROL - OWNER ONLY
+      run: |
+        echo "🚨 CRITICAL FILE MODIFICATION DETECTED!"
+        echo ""
+        echo "🔐 STRICT ACCESS POLICY:"
+        echo "   ⚠️  ONLY the repository owner can modify these files"
+        echo "   👤 Authorized User: ravibh5522 (Ravi Kumar)"
+        echo "   🚫 Current Actor: ${{ github.actor }}"
+        echo ""
+        if [[ "${{ github.actor }}" != "ravibh5522" ]]; then
+          echo "❌ ACCESS DENIED - UNAUTHORIZED USER!"
+          echo ""
+          echo "📋 Protected Files Include:"
+          echo "   • 📖 README.md - Project documentation"
+          echo "   • ⚖️  LICENSE - Proprietary license agreement"
+          echo "   • 📄 COPYRIGHT - Intellectual property notices"
+          echo "   • 🔧 .github/ - Repository configuration"
+          echo "   • � package.json - Project dependencies"
+          echo "   • ⚙️  Configuration files (tsconfig, vite, etc.)"
+          echo "   • 📝 Documentation files (*.md)"
+          echo "   • 🗃️  Database configuration"
+          echo "   • 🔐 Environment files"
+          echo ""
+          echo "🏢 PROPRIETARY SOFTWARE NOTICE:"
+          echo "   This is proprietary software owned by Ravi Kumar."
+          echo "   Unauthorized modification of protected files is prohibited."
+          echo "   Contributors can only modify source code in /src/ directory."
+          echo ""
+          echo "📞 Contact Information:"
+          echo "   • GitHub: @ravibh5522"
+          echo "   • Repository: smarttask-iq"
+          echo "   • Access Policy: See BRANCH_PROTECTION.md"
+          echo ""
+          echo "🔄 To Request Access:"
+          echo "   1. Use the access request template in issues"
+          echo "   2. Provide business justification"
+          echo "   3. Wait for owner approval"
+          echo ""
+          echo "❌ THIS PULL REQUEST WILL BE AUTOMATICALLY REJECTED."
+          exit 1
+        else
+          echo "✅ ACCESS GRANTED - Authorized owner detected"
+          echo "👤 Welcome back, Ravi Kumar (@ravibh5522)"
+          echo "🔓 You have full access to modify all protected files"
+        fi
+        echo "   • CONTRIBUTING.md"
+        echo "   • SECURITY.md"
+        echo "   • CODE_OF_CONDUCT.md"
+        echo "   • CHANGELOG.md"
+        echo "   • SUPPORT.md"
+        echo "   • .github/ configuration files"
+        echo "   • package.json"
+        echo "   • Configuration files (tsconfig.json, vite.config.ts, etc.)"
+        echo ""
+        echo "👥 Only the following users can modify these files:"
+        echo "   • Ravi Kumar (@ravibh5522) - Project Owner & Tech Lead"
+        echo "   • Gaurav Kumar - Stakeholder & Full Stack Developer"
+        echo "   • Raghav Gulati - Stakeholder & Full Stack Developer"
+        echo ""
+        echo "🔒 This is a proprietary project with protected intellectual property."
+        echo "📞 Contact @ravibh5522 for authorization or questions."
+        echo ""
+        echo "❌ This pull request will be automatically rejected."
+        exit 1
+
+    - name: 📝 Add comment to PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `## 🛡️ Protected Files Modification Detected
+
+          🚫 **This pull request modifies protected files that require owner authorization.**
+
+          ### 📋 Protected Files Include:
+          - 📖 README.md
+          - ⚖️ LICENSE
+          - 📝 Documentation files (CONTRIBUTING.md, SECURITY.md, etc.)
+          - 🔧 GitHub configuration files
+          - 📦 Package configuration files
+
+          ### 👥 Authorization Required From:
+          - **Ravi Kumar** (@ravibh5522) - Project Owner & Tech Lead
+          - **Gaurav Kumar** - Stakeholder & Full Stack Developer  
+          - **Raghav Gulati** - Stakeholder & Full Stack Developer
+
+          ### 🔄 Next Steps:
+          1. Contact project owners for authorization
+          2. Remove protected file changes from this PR
+          3. Submit changes to protected files separately with owner approval
+
+          **🔒 This is a proprietary project with protected intellectual property.**
+
+          ---
+          *Automated protection by SmartTask IQ repository rules*`
+          })
+
+  check-author-permissions:
+    runs-on: ubuntu-latest
+    name: 🔐 Check Author Permissions
+    
+    steps:
+    - name: ✅ Check if author is authorized
+      run: |
+        AUTHOR="${{ github.event.pull_request.user.login }}"
+        
+        # List of authorized users (project owners)
+        AUTHORIZED_USERS=("ravibh5522")
+        
+        echo "🔍 Checking authorization for user: $AUTHOR"
+        
+        # Check if user is in authorized list
+        for user in "${AUTHORIZED_USERS[@]}"; do
+          if [ "$AUTHOR" = "$user" ]; then
+            echo "✅ User $AUTHOR is authorized to modify protected files"
+            echo "👑 Project Owner permissions confirmed"
+            exit 0
+          fi
+        done
+        
+        echo "🚫 User $AUTHOR is NOT authorized to modify protected files"
+        echo "📞 Contact @ravibh5522 for authorization"
+        exit 1
+
+# Note: This workflow protects critical SmartTask IQ files
+# Only project owners can modify documentation and licensing files
+# Unauthorized changes will be automatically rejected

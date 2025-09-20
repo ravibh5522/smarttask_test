@@ -1,0 +1,173 @@
+name: Bug Report
+description: Report a bug to help us improve SmartTask IQ
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! This helps us improve SmartTask IQ.
+        
+        **Note**: This is proprietary software owned by Ravi Kumar. Please ensure you have legitimate access before reporting.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched existing issues to avoid duplicates
+          required: true
+        - label: I have legitimate access to SmartTask IQ
+          required: true
+        - label: This is a reproducible bug (not a one-time occurrence)
+          required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Provide a clear and concise description of the bug
+      placeholder: Describe what happened and what you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the bug
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: Describe the expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually occurred
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser
+      description: Which browser(s) are you experiencing this issue on?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other (specify in additional context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: Which operating system are you using?
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS Monterey
+        - macOS Big Sur
+        - macOS Catalina
+        - Ubuntu 20.04
+        - Ubuntu 22.04
+        - Other Linux
+        - iOS
+        - Android
+        - Other (specify in additional context)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device Type
+      description: What type of device are you using?
+      options:
+        - Desktop
+        - Laptop
+        - Tablet
+        - Mobile Phone
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: screen-resolution
+    attributes:
+      label: Screen Resolution
+      description: What is your screen resolution? (e.g., 1920x1080)
+      placeholder: 1920x1080
+    validations:
+      required: false
+
+  - type: textarea
+    id: console-errors
+    attributes:
+      label: Console Errors
+      description: If applicable, paste any console errors here
+      placeholder: Paste console errors or logs
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Videos
+      description: If applicable, add screenshots or videos to help explain the problem
+      placeholder: Drag and drop or paste screenshots here
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: Any additional information that might be relevant
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Bug Severity
+      description: How severe is this bug?
+      options:
+        - Critical (Application unusable)
+        - High (Major feature broken)
+        - Medium (Minor feature broken)
+        - Low (Cosmetic issue)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        **Privacy Notice**: Please do not include any sensitive information such as passwords, API keys, or personal data in this bug report.
+        
+        **Contact**: For urgent issues or security vulnerabilities, contact [@ravibh5522](https://github.com/ravibh5522) directly.
